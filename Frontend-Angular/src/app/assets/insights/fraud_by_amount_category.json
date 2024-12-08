@@ -1,0 +1,125 @@
+{
+    "categories": {
+        "low": {
+            "range": "$0 - $1,000",
+            "total_transactions": 142642,
+            "fraud_transactions": 58,
+            "fraud_percentage": 0.04,
+            "total_amount": 71564293.99,
+            "fraud_amount": 14039.18,
+            "average_fraud_amount": 242.0548275862069,
+            "amount_range": {
+                "min": 0.0,
+                "max": 999.98
+            }
+        },
+        "medium": {
+            "range": "$1,000 - $5,000",
+            "total_transactions": 559780,
+            "fraud_transactions": 104,
+            "fraud_percentage": 0.02,
+            "total_amount": 1663404984.8700001,
+            "fraud_amount": 301841.48,
+            "average_fraud_amount": 2902.3219230769228,
+            "amount_range": {
+                "min": 1000.0,
+                "max": 4999.99
+            }
+        },
+        "medium_high": {
+            "range": "$5,000 - $10,000",
+            "total_transactions": 583581,
+            "fraud_transactions": 116,
+            "fraud_percentage": 0.02,
+            "total_amount": 4310421080.769999,
+            "fraud_amount": 885945.7,
+            "average_fraud_amount": 7637.462931034483,
+            "amount_range": {
+                "min": 5000.0,
+                "max": 9999.98
+            }
+        },
+        "high": {
+            "range": "$10,000 - $20,000",
+            "total_transactions": 723678,
+            "fraud_transactions": 188,
+            "fraud_percentage": 0.03,
+            "total_amount": 10427342599.0,
+            "fraud_amount": 2871064.34,
+            "average_fraud_amount": 15271.618829787234,
+            "amount_range": {
+                "min": 10000.0,
+                "max": 19999.98
+            }
+        },
+        "very_high": {
+            "range": "$20,000 - $50,000",
+            "total_transactions": 796266,
+            "fraud_transactions": 572,
+            "fraud_percentage": 0.07,
+            "total_amount": 25692537858.29001,
+            "fraud_amount": 19514365.72,
+            "average_fraud_amount": 34116.023986013985,
+            "amount_range": {
+                "min": 20000.01,
+                "max": 49999.98
+            }
+        },
+        "extremely_high": {
+            "range": "$50,000 - $100,000",
+            "total_transactions": 719309,
+            "fraud_transactions": 669,
+            "fraud_percentage": 0.09,
+            "total_amount": 53343245538.68,
+            "fraud_amount": 49432795.67,
+            "average_fraud_amount": 73890.57648729447,
+            "amount_range": {
+                "min": 50000.12,
+                "max": 99999.81
+            }
+        },
+        "super_high": {
+            "range": "$100,000 - $200,000",
+            "total_transactions": 1163794,
+            "fraud_transactions": 1035,
+            "fraud_percentage": 0.09,
+            "total_amount": 171503236462.9499,
+            "fraud_amount": 149852781.59000003,
+            "average_fraud_amount": 144785.29622222224,
+            "amount_range": {
+                "min": 100000.0,
+                "max": 199999.86
+            }
+        },
+        "mega_high": {
+            "range": "$200,000 - \u221e",
+            "total_transactions": 1673570,
+            "fraud_transactions": 5471,
+            "fraud_percentage": 0.33,
+            "total_amount": 877381191941.2202,
+            "fraud_amount": 11833542594.16,
+            "average_fraud_amount": 2162957.885973314,
+            "amount_range": {
+                "min": 200000.08,
+                "max": 92445516.64
+            }
+        }
+    },
+    "fraud_distribution": {
+        "mega_high": 5471,
+        "super_high": 1035,
+        "extremely_high": 669,
+        "very_high": 572,
+        "high": 188,
+        "medium_high": 116,
+        "medium": 104,
+        "low": 58
+    },
+    "metadata": {
+        "total_transactions": 6362620,
+        "total_fraud_transactions": 8213,
+        "overall_fraud_percentage": 0.13,
+        "total_amount": 1144392944759.77,
+        "total_fraud_amount": 12056415427.839998
+    }
+}

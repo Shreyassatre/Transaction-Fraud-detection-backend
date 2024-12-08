@@ -1,0 +1,26 @@
+<div class="container">
+    <mat-table [dataSource]="customers" class="mat-elevation-z8">
+      <!-- Username Column -->
+      <ng-container matColumnDef="userName">
+        <mat-header-cell *matHeaderCellDef> Username </mat-header-cell>
+        <mat-cell *matCellDef="let customer"> {{customer.userName}} </mat-cell>
+      </ng-container>
+  
+      <!-- Account Number Column -->
+      <ng-container matColumnDef="custAccNo">
+        <mat-header-cell *matHeaderCellDef> Account Number </mat-header-cell>
+        <mat-cell *matCellDef="let customer"> {{customer.custAccNo}} </mat-cell>
+      </ng-container>
+  
+      <!-- Current Balance Column -->
+      <ng-container matColumnDef="CurrentBal">
+        <mat-header-cell *matHeaderCellDef> Current Balance </mat-header-cell>
+        <mat-cell *matCellDef="let customer"> {{customer.CurrentBal | currency}} </mat-cell>
+      </ng-container>
+  
+      <!-- Header and Row Definitions -->
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </div>
+  

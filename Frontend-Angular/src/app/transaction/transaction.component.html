@@ -1,0 +1,29 @@
+<div class="fraud-detection-form">
+    <h2>Fraud Transaction Detection</h2>
+    <form (ngSubmit)="onSubmit()">
+        <div>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" [(ngModel)]="transactionData.amount" name="amount" required>
+      </div>
+  
+      <div>
+        <label for="type">Transaction Type:</label>
+        <select id="type" [(ngModel)]="transactionData.type" name="type" required>
+          <option *ngFor="let t of types" [value]="t">{{ t }}</option>
+        </select>
+      </div>
+  
+      <div>
+        <label for="nameOrig">Sender's Name:</label>
+        <input type="text" id="nameOrig" [(ngModel)]="transactionData.nameOrig" name="nameOrig" required>
+      </div>
+  
+      <div>
+        <label for="nameDest">Receiver's Name:</label>
+        <input type="text" id="nameDest" [(ngModel)]="transactionData.nameDest" name="nameDest" required>
+      </div>
+  
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  

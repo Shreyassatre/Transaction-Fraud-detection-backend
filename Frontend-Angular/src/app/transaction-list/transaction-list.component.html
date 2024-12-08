@@ -1,0 +1,37 @@
+<div *ngIf="loading">Loading transactions...</div>
+
+<div class="table-container" *ngIf="!loading">
+  <table class="transaction-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name Orig</th>
+        <th>Old Balance Orig</th>
+        <th>New Balance Orig</th>
+        <th>Name Dest</th>
+        <th>Old Balance Dest</th>
+        <th>New Balance Dest</th>
+        <th>Amount</th>
+        <th>Type</th>
+        <th>Is Fraud</th>
+        <th>Risk Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let transaction of transactions" [ngClass]="{'fraudulent': transaction.isFraud === 1}">
+        <td>{{ transaction.id }}</td>
+        <td>{{ transaction.nameOrig }}</td>
+        <!-- Format numbers to remove trailing zeros -->
+        <td>{{ formatNumber(transaction.oldbalanceOrg) }}</td>
+        <td>{{ formatNumber(transaction.newbalanceOrig) }}</td>
+        <td>{{ transaction.nameDest }}</td>
+        <td>{{ formatNumber(transaction.oldbalanceDest) }}</td>
+        <td>{{ formatNumber(transaction.newbalanceDest) }}</td>
+        <td>{{ formatNumber(transaction.amount) }}</td>
+        <td>{{ transaction.type }}</td>
+        <td>{{ transaction.isFraud === 1 ? 'Yes' : 'No' }}</td>
+        <td>{{ transaction.riskScore * 100}}%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

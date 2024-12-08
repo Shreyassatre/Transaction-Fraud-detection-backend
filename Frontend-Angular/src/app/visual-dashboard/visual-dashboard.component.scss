@@ -1,0 +1,111 @@
+/* Layout for larger screens */
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-right: 5vw;
+}
+
+.row-custome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body {
+    overflow: hidden;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card-custome {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px lightgray;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    flex: 1 1 calc(50% - 20px); /* Dynamic width with responsive spacing */
+    max-width: 40vw; /* Maximum width to prevent overflow */
+    height: fit-content;
+}
+
+/* Ensure the pie chart stays on the side */
+.piechart {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px lightgray;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    flex: 1 1 calc(50% - 20px); /* Dynamic width with responsive spacing */
+    max-width: 50vw; /* Maximum width to prevent overflow */
+    height: 76vh;
+    flex: 1 1 30vw; /* Adjust to take up 30% of the viewport width */
+    max-height: 80vh; /* Prevent overflow */
+}
+
+.contianer-custome {
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 20px;
+    height: fit-content;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 1200px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* .piechart {
+        max-width: 80vw;
+        flex: 1 1 100%;
+    } */
+}
+
+@media (max-width: 1024px) {
+    .row-custome{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .card-custome {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 10px 0;
+        width: -webkit-fill-available;
+    }
+    .piechart{
+        width: -webkit-fill-available;
+        max-width: 65vw;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .card-custome {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    /* .piechart {
+        flex: 1 1 100%;
+    } */
+}
+
+@media (max-width: 576px) {
+    .card-custome {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    /* .piechart {
+        flex: 1 1 100%;
+    } */
+}

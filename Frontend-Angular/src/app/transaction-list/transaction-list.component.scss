@@ -1,0 +1,27 @@
+/* Container to handle horizontal scrolling */
+.table-container {
+    width: 100%;
+    overflow-x: auto;  /* Enables horizontal scrolling */
+  }
+  
+  .transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;  /* Makes the table width dynamic */
+  }
+  
+  .transaction-table th, .transaction-table td {
+    padding: 8px 16px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .transaction-table th {
+    background-color: #f4f4f4;
+  }
+  
+  /* Fraudulent rows will have a red transparent layer */
+  .fraudulent {
+    background-color: rgba(255, 0, 0, 0.387);  /* Light transparent red */
+  }
+  

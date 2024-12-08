@@ -1,0 +1,9 @@
+pandas
+xgboost
+fastapi[standard]
+uvicorn
+pydantic
+scikit-learn
+joblib
+sqlalchemy
+bcrypt

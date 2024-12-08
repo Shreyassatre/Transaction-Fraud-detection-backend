@@ -1,0 +1,27 @@
+{
+    "CASH_OUT": {
+        "total_transactions": 2237500,
+        "fraud_transactions": 4116,
+        "fraud_percentage": 0.18
+    },
+    "PAYMENT": {
+        "total_transactions": 2151495,
+        "fraud_transactions": 0,
+        "fraud_percentage": 0.0
+    },
+    "CASH_IN": {
+        "total_transactions": 1399284,
+        "fraud_transactions": 0,
+        "fraud_percentage": 0.0
+    },
+    "TRANSFER": {
+        "total_transactions": 532909,
+        "fraud_transactions": 4097,
+        "fraud_percentage": 0.77
+    },
+    "DEBIT": {
+        "total_transactions": 41432,
+        "fraud_transactions": 0,
+        "fraud_percentage": 0.0
+    }
+}
